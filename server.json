@@ -1,32 +1,37 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "eu.ansvar/swiss-financial-regulation-mcp",
-  "description": "Query FINMA Rundschreiben, Verordnungen, Wegleitungen, and enforcement actions",
+  "description": "FINMA (Swiss Financial Market Supervisory Authority) MCP server — Rundschreiben, Verordnungen, Wegleitungen, and enforcement actions",
   "repository": {
     "url": "https://github.com/Ansvar-Systems/swiss-financial-regulation-mcp",
     "source": "github"
   },
   "homepage": "https://ansvar.eu",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "Apache-2.0",
   "keywords": [
-    "finma",
-    "swiss-financial-regulation",
-    "rundschreiben",
-    "verordnungen",
-    "geldwaescherei",
+    "financial regulation",
+    "switzerland",
+    "regulation",
     "compliance",
-    "enforcement",
-    "mcp",
-    "ansvar"
+    "mcp"
   ],
   "packages": [
     {
       "registryType": "npm",
       "identifier": "@ansvar/swiss-financial-regulation-mcp",
-      "version": "0.1.0",
+      "version": "1.0.0",
       "transport": {
         "type": "stdio"
+      }
+    },
+    {
+      "registryType": "npm",
+      "identifier": "@ansvar/swiss-financial-regulation-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "streamable-http",
+        "url": "https://mcp.ansvar.eu/swiss-financial-regulation/mcp"
       }
     }
   ]
